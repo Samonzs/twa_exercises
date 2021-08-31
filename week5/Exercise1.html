@@ -1,0 +1,222 @@
+  <!DOCTYPE html>
+  <html lang="en" dir="ltr">
+  <head>
+      <meta charset="utf-8">
+      <title>Totally Wonderful Awnings</title>
+      <link rel="stylesheet" href="quoteForm.css">
+      <script src = "quoteValidation.js"></script>
+  </head>
+      <body>
+          <header>
+              <h1>Totally Wonderful Awnings Sales Form</h1>
+          </header>
+          <form action="https://twaaut.cdms.westernsydney.edu.au/twainfo/form.asp" onsubmit="return validationForm()" method="post" novalidate>
+              <section class = "border">
+                  <p>Sales Person Details:</p>
+                  <div class = "input">
+                      <label> Date of Quote: </label>
+                      <input type="text" id = "sdate" name="sdate" placeholder="dd/mm/yyyy e.g 06/12/2021"><div id = "sdateError" class="show">Invalid Date</div> <br>
+                  </div>
+                  <div class = "input" >
+                      <label> Staff Number: </label><input type="text" id="staffnumber" name="staffnumber" placeholder="e.g RZT1234"><div id ="staffNumberError" class="show">Invalid Staff Number</div> <br>
+                  </div>
+                  <div class = "input" >
+                      <label> Staff Name: </label><input type="text" id="staffname" name="staffname" placeholder="e.g Josh"><br>
+                  </div>
+             </section>
+             <section class = "border">
+                 <p>Customer details:</p>
+                 <label>Title: </label>
+                 <select id="genderType" name="genderType">
+                     <option value="Dr">Dr</option>
+                     <option value="Mx">Mx</option>
+                     <option value="Ms">Ms</option>
+                     <option value="Miss">Miss</option>
+                     <option value="Mrs">Mrs</option>
+                     <option value="Mr">Mr</option>
+                     <option value="Rev">Rev</option>
+                     <option value="Hon">Hon</option>
+                 </select>
+                 <br>
+                 <div class = "input" >
+                     <label> First name: </label>
+                     <input type="text" id="fname" name="fname" placeholder="e.g Joseph "> <div id = "firstNameError" class="show" >Invalid First Name</div> <br>
+                 </div>
+                 <div class = "input" >
+                     <label> Surname: </label>
+                     <input type="text" id="sname" name="sname" placeholder="e.g Al-kamesi "> <div id = "surNameError" class="show" >Invalid Surname</div> <br>
+                 </div>
+                 <div class = "input" >
+                     <label> Address: </label>
+                     <input type="text" id="address" name="address" placeholder="e.g 24 Retro Street"><div id = "addressError" class="show" >Invalid Address</div> <br>
+                 </div>
+                 <div class = "input">
+                     <label> Suburb: </label>
+                     <input type="text" id="suburb" name="suburb" placeholder="e.g Liverpool"><div id = "suburbError" class="show">Invalid Suburb</div> <br>
+                 </div>
+                 <div class = "input" >
+                     <label> Postcode: </label>
+                     <input type="text" id="postcode" name="postcode" placeholder="e.g 2170"><div id = "postcodeError" class="show">Invalid Postcode</div><br>
+                 </div>
+                 <div class = "input" >
+                     <label> Phone Number: </label>
+                     <input type="number" id="pnumber" name="pnumber" placeholder="e.g 0423136672"><div id = "phoneNumberError" class="show">Invalid Phone Number</div> <br>
+                 </div>
+                 <div class = "input" >
+                     <label> Email: </label>
+                     <input type="email" id="email" name="email" placeholder="e.g george1234@gmail.com"><div id = "emailError" class="show">Invalid Email</div><br>
+                 </div>
+
+            </section>
+            <section class = 'border'>
+                <p>Product details:</p>
+                <section class = 'border'>
+                    <div class = "input" >
+                        <label>Product ID: </label>
+                        <input type="text" id="productID" name="productID"><div id = "pIDerror" class="show">A Product ID must be entered</div><br>
+                    </div>
+                    <div class = "input" >
+                        <label>Product Name/Description: </label><br>
+                        <textarea id="pname" name = "pname" rows="3" cols="60" ></textarea><div id = "pnameError" class="show">Too many characters, 60 max </div><br>
+                    </div>
+                    <div class = "input" >
+                        <label>Quantity: </label>
+                        <input onblur="calculation()" type="text" id="quantity" name="quantity"><div id = "quantityError" class="show">Invalid Quantity (Only Values of 1-20)</div><br>
+                    </div>
+                    <div class = "input" >
+                        <label>Unit Price: </label>
+                        <input onblur="calculation()" type="text" id="unitPrice" name="unitPrice"><div id = "unitPriceError" class="show">Invalid Unit price (positive numbers only)</div><br>
+                    </div>
+                    <div class = "input" >
+                        <label>Line Total: </label>
+                        <input type="text" id="lineTotal" name="lineTotal" onblur="calculation();"><br>
+                    </div>
+                </section>
+                <br>
+                <section class = 'border'>
+                        <div class = "input" >
+                            <label>Product ID: </label>
+                            <input type="text" id="productID1" name="productID1"><div id = "pIDerror1" class="show">A Product ID must be entered</div><br>
+                        </div>
+                        <div class = "input" >
+                            <label>Product Name/Description: </label><br>
+                            <textarea id="pname1" name = "pname1" rows="3" cols="60" ></textarea><div id = "pnameError1" class="show">Too many characters, 60 max </div><br>
+                        </div>
+                        <div class = "input" >
+                            <label>Quantity: </label>
+                            <input onblur="calculation()" type="text" id="quantity1" name="quantity1"><div id = "quantityError1" class="show">Invalid Quantity (Only Values of 1-20)</div><br>
+                        </div>
+                        <div class = "input" >
+                            <label>Unit Price: </label>
+                            <input onblur="calculation()" type="text" id="unitPrice1" name="unitPrice1"><div id = "unitPriceError1" class="show">Invalid Unit price (positive numbers only)</div><br>
+                        </div>
+                        <div class = "input" >
+                            <label>Line Total: </label>
+                            <input type="text" id="lineTotal1" name="lineTotal1" onblur="calculation();"><br>
+                        </div>
+                    </section>
+                    <br>
+                    <section class = 'border'>
+                        <div class = "input" >
+                            <label>Product ID: </label>
+                            <input type="text" id="productID2" name="productID2"><div id = "pIDerror2" class="show">A Product ID must be entered</div><br>
+                        </div>
+                        <div class = "input" >
+                            <label>Product Name/Description: </label><br>
+                            <textarea id="pname2" name = "pname2" rows="3" cols="60" ></textarea><div id = "pnameError2" class="show">Too many characters, 60 max </div><br>
+                        </div>
+                        <div class = "input" >
+                            <label>Quantity: </label>
+                            <input onblur="calculation()" type="text" id="quantity2" name="quantity2"><div id = "quantityError2" class="show">Invalid Quantity (Only Values of 1-20)</div><br>
+                        </div>
+                        <div class = "input" >
+                            <label>Unit Price: </label>
+                            <input onblur="calculation()" type="text" id="unitPrice2" name="unitPrice2"><div id = "unitPriceError2" class="show">Invalid Unit price (positive numbers only)</div><br>
+                        </div>
+                        <div class = "input" >
+                            <label>Line Total: </label>
+                            <input type="text" id="lineTotal2" name="lineTotal2" onblur="calculation();"><br>
+                        </div>
+                    </section>
+                    <br>
+                    <section class = 'border'>
+                        <div class = "input" >
+                            <label>Product ID: </label>
+                            <input type="text" id="productID3" name="productID3"><div id = "pIDerror3" class="show">A Product ID must be entered</div><br>
+                        </div>
+                        <div class = "input" >
+                            <label>Product Name/Description: </label><br>
+                            <textarea id="pname3" name = "pname3" rows="3" cols="60" ></textarea><div id = "pnameError3" class="show">Too many characters, 60 max </div><br>
+                        </div>
+                        <div class = "input" >
+                            <label>Quantity: </label>
+                            <input onblur="calculation()" type="text" id="quantity3" name="quantity3"><div id = "quantityError3" class="show">Invalid Quantity (Only Values of 1-20)</div><br>
+                        </div>
+                        <div class = "input" >
+                            <label>Unit Price: </label>
+                            <input onblur="calculation()" type="text" id="unitPrice3" name="unitPrice3"><div id = "unitPriceError3" class="show">Invalid Unit price (positive numbers only)</div><br>
+                        </div>
+                        <div class = "input" >
+                            <label>Line Total: </label>
+                            <input type="text" id="lineTotal3" name="lineTotal3" onblur="calculation();"><br>
+                        </div>
+                    </section>
+                    <br>
+                    <section class = 'border'>
+                        <div class = "input" >
+                            <label>Product ID: </label>
+                            <input type="text" id="productID4" name="productID4"><div id = "pIDerror4" class="show">A Product ID must be entered</div><br>
+                        </div>
+                        <div class = "input" >
+                            <label>Product Name/Description: </label><br>
+                            <textarea id="pname4" name = "pname4" rows="3" cols="60" ></textarea><div id = "pnameError4" class="show">Too many characters, 60 max </div><br>
+                        </div>
+                        <div class = "input" >
+                            <label>Quantity: </label>
+                            <input onblur="calculation()" type="text" id="quantity4" name="quantity4"><div id = "quantityError4" class="show">Invalid Quantity (Only Values of 1-20)</div><br>
+                        </div>
+                        <div class = "input" >
+                            <label>Unit Price: </label>
+                            <input onblur="calculation()" type="text" id="unitPrice4" name="unitPrice4"><div id = "unitPriceError4" class="show">Invalid Unit price (positive numbers only)</div><br>
+                        </div>
+                        <div class = "input" >
+                            <label>Line Total: </label>
+                            <input type="text" id="lineTotal4" name="lineTotal4" onblur="calculation();"><br>
+                        </div>
+                    </section>
+                    <br>
+                    <section class = 'border'>
+                        <div class = "input" >
+                            <label> Installation Notes:</label><br>
+                            <textarea id="installationNotes" name = "installationNotes" placeholder = "Installation Notes here ..."  rows="5" cols="60"></textarea><br>
+                        </div>
+                        <div class = "input" >
+                            <label> Requested Installation Date: </label>
+                            <input type="text" id = "date"  name="date" placeholder="dd/mm/yyyy" ><div id = "pdateError" class="show">Invalid Date</div> <br>
+                        </div>
+                        <div class = "input" >
+                            <label> Subtotal: </label>
+                            <input type="text" id="subtotal" name="Subtotal"><br>
+                        </div>
+                        <div class = "input" >
+                            <label> GST: </label>
+                            <input type="text" id="gst" name="GST"> <br>
+                        </div>
+                        <div class = "input" >
+                            <label> Total: </label>
+                            <input type="text" id="total" name="Total"> <br>
+                        </div>
+                        <div class = "input" >
+                            <label> Deposit Paid: </label>
+                            <input type="text" id="depositpaid" name="depositpaid" ><div id = "depositError" class="show">Invalid Deposit (positive numbers only)</div><div id = "depositError2" class="show">Invalid Deposit (Must be less then total)</div> <br>
+                        </div>
+                        <div class = "input" >
+                            <label> Total Due: </label>
+                            <input type="text" id="totaldue" name="Total Due" onblur="calculation();"><div id = "totalNegativeError" class="show">Invalid Total (Cannot be a negative value)</div> <br>
+                        </div>
+                    </section>
+                    <button type="submit" name="submit button">Submit</button>
+                </section>
+            </form>
+        </body>
+        </html>

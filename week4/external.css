@@ -1,0 +1,113 @@
+*{
+    font-family: Arial, sans-serif;
+    margin:0;
+    padding:0;
+}
+
+header {
+    background-color:#004165;
+}
+
+h1 {
+    font-size:2.0em;
+    color:#333;
+
+}
+
+hr {
+    border-top:1px dashed #000;
+    margin-top:5px;
+    margin-bottom: 5px;
+}
+
+article {
+    padding:20px;
+}
+
+section > p:first-of-type::first-letter {
+    font-size:1.5em;
+    color:#ff0000;
+    font-family:"Times New Roman", serif;
+}
+
+.right-floated-image {
+    float:right;
+    border:1px solid #000;
+    padding:5px;
+}
+/* a */
+#logo {
+    padding: 5px;
+}
+
+/* b */
+nav {
+    float: right;
+    padding: 20px;
+}
+
+/* c */
+nav a {
+    color: white;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+/* d */
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* e */
+nav > ul, nav > ul > li {
+    display: inline-block;
+}
+
+/* f */
+.info-boxes {
+    text-align: center;
+    padding: 5px;
+}
+
+/* g */
+.info-box {
+    padding: 10px;
+    display: inline-block;
+    background-color: #004165;
+    width: 31%;
+}
+
+/* h */
+.info-box p {
+    color: #ffffff;
+    font-weight: bold;
+    border-bottom width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #ffffff;
+}
+
+/* i */
+.info-box div {
+    text-align: center;
+}
+
+/* j */
+@media only screen and (max-width: 1000px) {
+    .info-box {
+        width: 95%;
+        margin-top: 5px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .right-floated-image {
+        float:none;
+        text-align: center;
+    }
+
+    nav {
+        padding-right: 5px;
+    }
+}

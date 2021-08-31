@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto%27');
+
+/* Navigation Bar */
+.homePage > a{
+    text-decoration: none;
+    font-size: 2.0em;
+    margin: 10px;
+    font-style: verdana;
+
+}
+
+.logoff {
+    float: right;
+}
+
+.nav > a{
+    color: white;
+    font-size: 0.9em;
+    padding: 15px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.nav {
+    background-color: #8A98BF;
+    font-size: 1.2em;
+    padding: 20px;
+}
+/* Score entry Table */
+/* Fixtures Table */
+.InputAlignment{
+    max-width: 1180px;
+    margin: auto;
+}
+label{
+    font-style: italic;
+    font-weight: bold;
+}
+ .inputID{
+    background-color: #f9f9f9;
+    min-width: 60px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 3px 5px;
+}
+
+
+select{
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+
+
+.fixture_ScoreEntry_Table img:hover{
+    transform: scale(1.8);
+}
+.fixture_ScoreEntry_Table a{
+    text-decoration: none;
+    font-weight: bold;
+
+}
+.fixture_ScoreEntry_Table th{
+    margin: 10px;
+}
+.fixture_ScoreEntry_Table th{
+    color: white;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #006699;
+    border-collapse: collapse;
+}
+.fixture_ScoreEntry_Table tr:hover{
+    background-color: #DFDFF2;
+}
+.fixture_ScoreEntry_Table td{
+    color: black;
+}
+
+ .fixture_ScoreEntry_Table th, td {
+    border-collapse: collapse;
+    padding-left: 14.5px;
+    padding-right: 14.5px;
+}
+
+.fixture_ScoreEntry_Table{
+    overflow:hidden;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+
+
+/* Ladder Table */
+.ladderTable th{
+    color: white;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #006699;
+    border-collapse: collapse;
+}
+.ladderTable td{
+
+    color: grey;
+}
+ .ladderTable th, td {
+    border-collapse: collapse;
+    padding-left: 14.5px;
+    padding-right: 14.5px;
+}
+.ladderLayout {
+    max-width: 900px;
+    margin: auto;
+
+}
+.ladderTable{
+    overflow:hidden;
+    border-collapse: collapse;
+    border-radius:10px;
+}
+
+/* login page */
+
+.loginTitle {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #006699;
+}
+input[type="text"], input[type="password"] {
+    border-style: ridge;
+    font-weight: bold;
+    outline: 0;
+    margin-bottom: 30px;
+    padding-left: 0px;
+}
+.loginBox{
+    margin-top: 75px;
+    height: auto;
+    text-align: center;
+    border-color: #0DB8DE;
+    border-style: groove;
+    max-width: 35%;
+    margin: auto;
+
+}
+.formLabel{
+    font-style: italic;
+}
+.inputBox{
+    padding: 5px;
+}
+.submit{
+    border-color: #0DB8DE;
+    color: #006699;
+    border-radius: 0px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 4px;
+
+}
+
+.submit:hover {
+    background-color: #0DB8DE;
+    color: white;
+
+}
+
+/* Venue page */
+
+#mapSize {
+  height: 550px;
+  max-width: 750px;
+  margin: auto;
+  width: 100%;
+}
+/*  */
+body {
+    margin:0;
+    padding:0;
+    font-family: Arial;
+    font-size:1em;
+    background-color: #DBE7FF;
+    color:#000000;
+}
+h1{
+    font-style: 'Roboto';
+}
+
+form {
+    margin:20px;
+}
+ul, ul li {
+    list-style:none;
+}
+select {
+    width:60px;
+    padding:3px;
+    font-size:1em;
+}
+
+input[type="submit"] {
+    padding:3px;
+    font-size:1em;
+}
+
+label {
+    display:inline-block;
+    width:150px;
+}
+
+
+.errorMsg{
+    display: none;
+    color: red;
+}

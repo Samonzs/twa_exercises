@@ -1,0 +1,201 @@
+
+/* 20056663, Ali Salman, Campbelltown friday 1 pm */
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab');
+
+body {
+  background-color: white;
+  font-family: Helvetica, Arial, Sans-serif;
+  font-size: 1em;
+  color:black;
+  border: 1px solid #172457;
+  border-radius: 8px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 50px;
+  margin-left: 50px;
+  padding-top:25px;
+  padding-right:10px;
+  padding-bottom:25px;
+  padding-left:10px;
+}
+
+h1{
+  border-bottom: 2px solid black;
+  color: #172457;
+  margin-bottom: 0.2em;
+  font-size: 3em;
+  text-align: center;
+}
+h2{
+  font-size: 2.5em;
+  color: #172457;
+  margin-bottom: 0.2em;
+  text-transform: capitalize;
+}
+
+h3{
+  font-size: 2.2em;
+  color: #7B85AD;
+  margin-bottom: 0.2em;
+  text-transform: capitalize;
+}
+
+h4{
+  font-size: 1.8em;
+  color: #7B85AD;
+  margin-bottom: 0.2em;
+  text-transform: capitalize;
+  padding-top: 5px;
+}
+
+h5{
+  font-size: 1.4em;
+  margin-bottom: 0.3em;
+  color: black;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Josefin Slab', Georgia, serif;
+}
+a:visited{
+  color: #7B85AD
+}
+a{
+  color: black;
+  font-style: italic;
+}
+
+
+#nav1 > a{
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: center;
+  font-style: italic;
+
+}
+
+#nav1 > a:hover{
+  background-color: #7B85AD;
+  border-radius: 10px;
+  color: white;
+}
+
+#nav1 {
+  background-color: #172457;
+  border-radius: 10px;
+  font-size: 1.2em;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+
+#figure1 {
+  margin: auto;
+  float: right;
+  min-width: 300px;
+  max-width: 400px;
+  padding-left: 25px;
+}
+
+#figure1 > img{
+  width: 100%;
+  height: 100%;
+}
+
+#figure2{
+  margin: auto;
+  min-width: 300px;
+  max-width: 700px;
+  padding left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+#figure2 > img{
+  width: 100%;
+  height: 100%;
+}
+
+figcaption {
+  border-bottom: 1px solid black;
+  font-style: italic;
+  text-align: justify;
+  text-justify: inter-word;
+  padding-bottom: 15px;
+  font-size: 0.7em
+}
+
+
+
+p{
+text-align: justify;
+text-justify: inter-word;
+}
+
+ul{
+  line-height: 1.5;
+}
+ol{
+  padding-left: 15px;
+  line-height: 1.5;
+}
+
+
+.external{
+  text-decoration: underline;
+  text-decoration-style:dashed;
+  text-decoration-color: black;
+}
+
+#studentID{
+  float: right;
+  font-style: italic;
+  font-size: 0.7em;
+  color: white;
+  top:80px;
+  right: 100px;
+  padding-top: 10px;
+  padding-right: 10px;
+
+}
+
+footer {
+  color: inherit;
+  font-size: 0.7em;
+  background-color: #f0f0f0;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 10px;
+
+}
+.column1{
+  width: 70%;
+  display: inline-block;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.column2{
+  width:20%;
+  float: right;
+  display: inline-block;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 10px;
+  background-color: #f0f0f0;
+  border-left-width: 1px;
+  border-left-style: dashed;
+  border-left-color: #172457;
+
+}

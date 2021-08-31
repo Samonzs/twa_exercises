@@ -1,0 +1,64 @@
+body {
+    margin:10px;
+    padding:0;
+    font-family: Arial;
+    font-size:1em;
+    background-color:#ffffff;
+    color:#000000;
+}
+
+h1, h2 {
+    padding: 10px;
+}
+
+form, #output {
+    margin:20px;
+    padding: 10px;
+    width: 50%;
+}
+
+input, textarea {
+    border-radius:5px;
+    border:1px solid #ccc;
+}
+
+input[type="text"], input[type="password"], textarea, select {
+    width:250px;
+    padding:3px;
+    font-size:1em;
+}
+
+input[type="submit"] {
+    padding:6px;
+    font-size:1em;
+    background-color: #7db54a;
+    color: #ffffff;
+}
+
+label {
+    display:inline-block;
+    width:200px;
+}
+
+table {
+    border-collapse: collapse;
+    margin:10px;
+}
+
+table, th, td {
+    border: black solid 1px;
+    padding:3px;
+}
+
+thead {
+  background-color: #7db54a;
+}
+
+.errorMsg {
+    color: #FF0000;
+}
+
+#output {
+   width :50%;
+   color: #7db54a;
+}
